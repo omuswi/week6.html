@@ -1,0 +1,75 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyumba Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Nyumba Rentals </h1>
+        <p>Your dream home is just a click away.</p>
+    </header>
+
+    <main>
+        
+        <section id="property-search-section">
+            <h2>Find Your Next Home</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a location">
+                <button id="search-btn">Search</button>
+            </div>
+            <p id="search-results">Results will appear here</p>
+        </section>
+
+        <hr>
+
+        <section id="price-calculator-section">
+            <h2>Calculate Your Rental Cost</h2>
+            <p>Enter the number of months to calculate the total price.</p>
+            <div class="calculator-container">
+                <label for="monthly-rent">Monthly Rent:</label>
+                <input type="number" id="monthly-rent" value="1000" min="100">
+                
+                <label for="rental-months">Number of Months:</label>
+                <input type="number" id="rental-months" value="1" min="1">
+            </div>
+            <button id="calculate-btn">Calculate Total</button>
+            <p id="total-price">Total Price:</p>
+        </section>
+
+        <hr>
+
+        <section id="contact-form-section">
+            <h2>Contact Our Team</h2>
+            <p>Fill out the form below to get in touch with us.</p>
+            <form id="contact-form">
+                <label for="name">Your Full Name:</label>
+                <input type="text" id="name" name="name">
+                <span class="error-message" id="name-error"></span>
+
+                <label for="email">Your Email:</label>
+                <input type="text" id="email" name="email">
+                <span class="error-message" id="email-error"></span>
+                
+                <label for="inquiry">Inquiry Type:</label>
+                <select id="inquiry" name="inquiry">
+                    <option value="">-- Select --</option>
+                    <option value="rental">Rental Inquiry</option>
+                    <option value="listing">Property Listing</option>
+                    <option value="general">General Question</option>
+                </select>
+                <span class="error-message" id="inquiry-error"></span>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <span class="error-message" id="message-error"></span>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
